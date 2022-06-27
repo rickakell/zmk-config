@@ -64,10 +64,10 @@
                 
        		default_layer {
 		bindings = <
-            &kp QUOT &kp COMMA &kp DOT &kp R &kp T     &kp F &kp G &kp C &kp R &kp L 
-            &kp A    &kp O     &kp E   &kp U &kp I     &kp D &kp H &kp T &kp N &kp S
-            &kp Z    &kp Q     &kp J   &kp K &kp X     &kp B &kp M &kp W &kp V &kp Z
-                                    &mo 1 &kp LCTL     &kp SPC &mo 2 
+        &kp QUOT &kp COMMA &kp DOT &kp R &kp T     &kp F &kp G &kp C &kp R &kp L 
+        &kp A    &kp O     &kp E   &kp U &kp I     &kp D &kp H &kp T &kp N &kp S
+        &kp Z    &kp Q     &kp J   &kp K &kp X     &kp B &kp M &kp W &kp V &kp Z
+                                &mo 1 &kp LCTL     &kp SPC &mo 2 
 		>;
 		};
 
@@ -82,10 +82,10 @@
 		
 		right_layer {
 		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
+        &kp GRAVE &kp LBKT &kp LPAR  &kp LBRC  &kp TILDE   &kp CARET &kp RBRC &kp RPAR   &kp RBKT   &kp GRAVE
+        &kp MINUS &kp STAR &kp EQUAL &kp UNDER &kp DLLR    &kp HASH  &sk RALT &sk RCTRL  &sk RSHIFT &sk RGUI
+        &kp PLUS  &kp PIPE &kp AT    &kp BSLH  &kp PERC    &kp AMPS  &kp FSLH  &kp QMARK &kp COLON  &kp EXCL 
+                                         &mo 3 &kp LCTL    &kp SPC  &mo 2 
 		>;
 		};	
 		
