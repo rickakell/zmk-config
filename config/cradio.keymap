@@ -29,6 +29,15 @@
 
 / { 
 
+    behaviors {
+        TD_LDR: tap_dance_bootloader {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_BOOTLOADER";
+            tapping-term_ms = <200>;
+            bindings = <&none>, <&none>, <&bootloader>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -68,7 +77,6 @@
             bindings = <&kp RGUI>;
         };
         
-
         
     };
 
@@ -104,10 +112,10 @@
 		
 		function_layer {
 		bindings = <
-            &none  &kp N6 &kp N5 &kp N4 &none    &kp F8 &kp F9   &kp F10   &kp F11    &kp F12 
-            &kp N0 &kp N3 &kp N2 &kp N1 &none    &kp F7 &sk RALT &sk RCTRL &sk RSHIFT &sk RGUI
-            &none  &kp N9 &kp N8 &kp N7 &none	 &kp F6 &kp F5   &kp F4    &kp F3     &kp F2 
-					            &trans &trans  	 &kp F13 &trans 
+            &none  &kp N6 &kp N5 &kp N4 &TD_LDR    &kp F8 &kp F9   &kp F10   &kp F11    &kp F12
+            &kp N0 &kp N3 &kp N2 &kp N1 &none      &kp F7 &sk RALT &sk RCTRL &sk RSHIFT &sk RGUI
+            &none  &kp N9 &kp N8 &kp N7 &none	   &kp F6 &kp F5   &kp F4    &kp F3     &kp F2
+					            &trans &trans  	   &kp F13 &trans 
 		>;
 		};	
         
