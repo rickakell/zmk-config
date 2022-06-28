@@ -77,10 +77,10 @@
 
        		left_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-		&kp TAB    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
-		&kp ESC    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
-					    &mo 1  &kp LGUI  					&kp RGUI &mo 2 
+        &kp C(TAB) &kp C(S(TAB)) &kp LA(TAB) &kp LS(LA(TAB)) &kp K_VOLUME_UP      &kp CAPS  &kp HOME  &kp UP   &kp END   &kp DEL
+        &sk LGUI   &sk LSHIFT    &sk LCTRL   &sk LALT        &kp TAB 			  &kp ESC   &kp LEFT  &kp DOWN &kp RIGHT &kp BSPC
+        &kp LC(Z)  &kp LC(X)     &kp LC(C)   &kp TAB         &kp K_VOLUME_DOWN    &none     &kp PG_UP &kp PG_DN &none  &kp LC(S) 
+					                                           &mo 1  &kp LGUI    &kp RGUI &mo 2 
 		>;
 		};
 		
@@ -88,8 +88,8 @@
 		bindings = <
         &kp GRAVE &kp LBKT &kp LPAR  &kp LBRC  &kp TILDE   &kp CARET &kp RBRC &kp RPAR   &kp RBKT   &kp GRAVE
         &kp MINUS &kp STAR &kp EQUAL &kp UNDER &kp DLLR    &kp HASH  &sk RALT &sk RCTRL  &sk RSHIFT &sk RGUI
-        &kp PLUS  &kp PIPE &kp AT    &kp BSLH  &kp PRCNT   &kp AMPS  &kp FSLH  &kp QMARK &kp COLON  &kp EXCL
-                                         &trans &kp LCTL   &kp SPC  &trans
+        &kp PLUS  &kp PIPE &kp AT    &kp BSLH  &kp PRCNT   &kp AMPS  &kp FSLH  &kp QMARK &kp COLON  &kp EXCL 
+                                         &mo 3 &kp LCTL    &kp SPC  &mo 2
 		>;
 		};	
 		
