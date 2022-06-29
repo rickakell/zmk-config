@@ -14,6 +14,10 @@
    // tapping_term_ms = <200>;
 };
 
+&sk {
+    ignore-modifiers;
+};
+
 / { 
 
     combos {
@@ -83,7 +87,7 @@
 		right_layer {
 		bindings = <
             &none &none &none &none &none    &none &none &none &none &none
-            &none &none &none &none &none    &none &none &none &none &none
+            &kp MINUS &kp STAR &kp EQUAL &kp UNDER &kp DLLR    &kp HASH  &sk RALT &sk RCTRL  &sk RSHIFT &sk RGUI
             &none &none &none &none &none    &none &none &none &none &none
                                 &none &none    &none &none 
 		>;
