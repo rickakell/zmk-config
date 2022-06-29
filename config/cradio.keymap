@@ -31,7 +31,7 @@
     ignore-modifiers;
 };
 
-/ { 
+/ {
 
     behaviors {
         TD_LDR: tap_dance_bootloader {
@@ -49,62 +49,62 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-        
+
          combo_tab {
             timeout-ms = <50>;
             key-positions = <10 11>;
             bindings = <&kp TAB>;
         };
-        
+
             combo_ralt {
             timeout-ms = <50>;
             key-positions = <17 16>;
             bindings = <&kp RALT>;
         };
-        
+
                     combo_lalt {
             timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&kp LALT>;
         };
-        
+
                            combo_lgui {
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp LGUI>;
         };
-        
-        
+
+
            combo_rgui {
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp RGUI>;
         };
-        
-        
+
+
     };
 
         keymap {
                 compatible = "zmk,keymap";
-                
+
        	default_layer {
 		bindings = <
-        &kp QUOT &kp COMMA &kp DOT &kp R &kp T     &kp F &kp G &kp C &kp R &kp L 
+        &kp QUOT &kp COMMA &kp DOT &kp R &kp T     &kp F &kp G &kp C &kp R &kp L
         &kp A    &kp O     &kp E   &kp U &kp I     &kp D &kp H &kp T &kp N &kp S
         &kp Z    &kp Q     &kp J   &kp K &kp X     &kp B &kp M &kp W &kp V &kp Z
-                             &mo NAV &kp LSHFT     &kp SPC &mo SYM 
+                             &mo NAV &kp LSHFT     &kp SPC &mo SYM
 		>;
 		};
 
        	navigation_layer {
 		bindings = <
-        &kp TAB_FWD &kp TAB_BK  &kp WN_FWD &kp WN_BK VOL_UP    &kp CAPS &kp HOME  &kp UP   &kp END   &kp DEL
+        &kp TAB_FWD &kp TAB_BK &kp WN_FWD &kp WN_BK VOL_UP    &kp CAPS &kp HOME  &kp UP   &kp END   &kp DEL
         &sk LGUI    &sk LSHIFT &sk LCTRL  &sk LALT  &kp TAB    &kp ESC  &kp LEFT  &kp DOWN &kp RIGHT &kp BSPC
-        &kp LC(Z)   &kp LC(Y)  &kp LC(C)  &kp LC(V) VOL_DWN    &none    &kp PG_UP &kp PG_DN &none  &kp LC(S) 
-					                          &trans  &none    &kp ENTER &trans 
+        &kp LC(Z)   &kp LC(Y)  &kp LC(C)  &kp LC(V) VOL_DWN    &none    &kp PG_UP &kp PG_DN &none  &kp LC(S)
+					                          &trans  &none    &kp ENTER &trans
 		>;
 		};
-		
+
 		symbol_layer {
 		bindings = <
         &kp GRAVE &kp LBKT &kp LPAR  &kp LBRC  &kp TILDE   &kp CARET &kp RBRC &kp RPAR   &kp RBKT   &kp GRAVE
@@ -112,16 +112,16 @@
         &kp PLUS  &kp PIPE &kp AT    &kp BSLH  &kp PRCNT   &kp AMPS  &kp FSLH  &kp QMARK &kp COLON  &kp EXCL
                                          &trans &kp LCTL   &kp SPC  &trans
 		>;
-		};	
-		
+		};
+
 		function_layer {
 		bindings = <
             &none  &kp N6 &kp N5 &kp N4 &TD_LDR    &kp F8 &kp F9   &kp F10   &kp F11    &kp F12
             &kp N0 &kp N3 &kp N2 &kp N1 &none      &kp F7 &sk RALT &sk RCTRL &sk RSHIFT &sk RGUI
             &none  &kp N9 &kp N8 &kp N7 &none	   &kp F6 &kp F5   &kp F4    &kp F3     &kp F2
-					            &trans &trans  	   &kp F13 &trans 
+					            &trans &trans  	   &kp F13 &trans
 		>;
-		};	
-        
+		};
+
 	};
 };
