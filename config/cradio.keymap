@@ -105,7 +105,7 @@
 		bindings = <
         &kp GRAVE &kp LBKT &kp LPAR  &kp LBRC  &kp TILDE   &kp CARET &kp RBRC &kp RPAR   &kp RBKT   &kp GRAVE
         &kp MINUS &kp STAR &kp EQUAL &kp UNDER &kp DLLR    &kp HASH  &sk RALT &sk RCTRL  &sk RSHIFT &sk RGUI
-        &kp PLUS  &kp PIPE &kp AT    &kp BSLH  &kp PERC    &kp AMPS  &kp FSLH  &kp QMARK &kp COLON  &kp EXCL 
+        &kp PLUS  &kp PIPE &kp AT    &kp BSLH  &kp PRCNT   &kp AMPS  &kp FSLH  &kp QMARK &kp COLON  &kp EXCL
                                          &trans &kp LCTL   &kp SPC  &trans
 		>;
 		};	
