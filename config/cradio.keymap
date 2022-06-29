@@ -13,6 +13,8 @@
 #define NAV 2
 #define FNC 3
 
+#define test &none
+
 &mt {
   //  flavor = "tap-preferred";
    // tapping_term_ms = <200>;
@@ -81,7 +83,7 @@
 
        	navigation_layer {
 		bindings = <
-        &none &none  &none &none &kp &none     &kp CAPS &kp HOME  &kp UP   &kp END   &kp DEL
+        test test test test test     &kp CAPS &kp HOME  &kp UP   &kp END   &kp DEL
         &sk LGUI    &sk LSHIFT &sk LCTRL  &sk LALT  &kp TAB        &kp ESC  &kp LEFT  &kp DOWN &kp RIGHT &kp BSPC
         &kp LC(Z)   &kp LC(Y)  &kp LC(C)  &kp LC(V) &kp &none    &none    &kp PG_UP &kp PG_DN &none  &kp LC(S) 
 					                              &trans  &none    &kp ENTER &trans 
