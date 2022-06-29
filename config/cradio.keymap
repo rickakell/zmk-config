@@ -38,6 +38,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_BOOTLOADER";
             tapping-term_ms = <200>;
+            #binding-cells = <0>;
             bindings = <&none>, <&none>, <&bootloader>;
         };
     };
