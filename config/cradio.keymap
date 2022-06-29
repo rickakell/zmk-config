@@ -16,11 +16,11 @@
 #define VOL_UP &none
 #define VOL_DWN &none
 
-#define WN_FWD LA(TAB)
-#define WN_BK LA(LS(TAB))
+#define WN_FWD &none
+#define WN_BK &none
 
-#define TAB_FWD LC(TAB)
-#define TAB_BK LC(LS(TAB))
+#define TAB_FWD &none
+#define TAB_BK &none
 
 &mt {
   //  flavor = "tap-preferred";
