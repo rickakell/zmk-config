@@ -90,7 +90,7 @@
 
        	navigation_layer {
 		bindings = <
-        &kp TAB_FWD &kp TB_BK  &kp WN_FWD &kp WN_BK VOL_UP     &kp CAPS &kp HOME  &kp UP   &kp END   &kp DEL
+        &kp TAB_FWD &kp TAB_BK  &kp WN_FWD &kp WN_BK VOL_UP     &kp CAPS &kp HOME  &kp UP   &kp END   &kp DEL
         &sk LGUI    &sk LSHIFT &sk LCTRL  &sk LALT  &kp TAB        &kp ESC  &kp LEFT  &kp DOWN &kp RIGHT &kp BSPC
         &kp LC(Z)   &kp LC(Y)  &kp LC(C)  &kp LC(V) VOL_DWN    &none    &kp PG_UP &kp PG_DN &none  &kp LC(S) 
 					                              &trans  &none    &kp ENTER &trans 
