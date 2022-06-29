@@ -77,9 +77,9 @@
 
        		left_layer {
 		bindings = <
-        &kp LC(TAB) &kp LC(LS(TAB)) &kp LA(TAB) &kp LS(LA(TAB)) &K_VOLUME_UP      &kp CAPS  &kp HOME  &kp UP   &kp END   &kp DEL
+        &kp LC(TAB) &kp LC(LS(TAB)) &kp LA(TAB) &kp LS(LA(TAB)) &none      &kp CAPS  &kp HOME  &kp UP   &kp END   &kp DEL
         &sk LGUI   &sk LSHIFT    &sk LCTRL   &sk LALT        &kp TAB 			  &kp ESC   &kp LEFT  &kp DOWN &kp RIGHT &kp BSPC
-        &kp LC(Z)  &kp LC(X)     &kp LC(C)   &kp TAB         &none    &K_VOLUME_DOWN     &kp PG_UP &kp PG_DN &none  &kp LC(S) 
+        &kp LC(Z)  &kp LC(X)     &kp LC(C)   &kp TAB         &none    &none     &kp PG_UP &kp PG_DN &none  &kp LC(S) 
 					                                           &mo 1  &kp LGUI    &kp RGUI &mo 2 
 		>;
 		};
