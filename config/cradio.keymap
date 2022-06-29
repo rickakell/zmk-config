@@ -13,8 +13,8 @@
 #define NAV 2
 #define FNC 3
 
-#define VOL_UP K_VOLUME_UP
-#define VOL_DWN K_VOLUME_DOWN
+#define VOL_UP &none
+#define VOL_DWN &none
 
 #define WN_FWD LA(TAB)
 #define WN_BK LA(LS(TAB))
