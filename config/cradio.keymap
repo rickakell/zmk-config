@@ -16,8 +16,10 @@
 #define TAB_FWD LC(TAB)
 #define TAB_BK LC(LS(TAB))
 
+#define STICKY_KEY_TIMEOUT 60000
 &sk {
     ignore-modifiers;
+    release-after-ms = <STICKY_KEY_TIMEOUT>;
 };
 
 / {
