@@ -30,7 +30,7 @@
             bindings = <&none>, <&none>, <&bootloader>;
         };
 
-        CPY_CT: tap_dance_bootloader {
+        CPY_CT: tap_dance_copy_cut {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_COPY_CUT";
             #binding-cells = <0>;
