@@ -41,10 +41,46 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
+        combo_gui {
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp LGUI>;
+        };
+
+        combo_left_vertical_enter {
+            timeout-ms = <50>;
+            key-positions = <11 21>;
+            bindings = <&kp ENTER>;
+        };
+
+        combo_right_vertical_enter {
+            timeout-ms = <50>;
+            key-positions = <8 18>;
+            bindings = <&kp ENTER>;
+        };
+
+        combo_left_vertical_escape {
+            timeout-ms = <50>;
+            key-positions = <2 12>;
+            bindings = <&kp ESC>;
+        };
+
+        combo_right_vertical_escape {
+            timeout-ms = <50>;
+            key-positions = <7 17>;
+            bindings = <&kp ESC>;
+        };
+
+        combo_left_vertical_delete {
+            timeout-ms = <50>;
+            key-positions = <3 13>;
+            bindings = <&kp DEL>;
+        };
+
+        combo_right_vertical_backspace {
+            timeout-ms = <50>;
+            key-positions = <6 16>;
+            bindings = <&kp BSPC>;
         };
 
     };
