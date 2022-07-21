@@ -16,7 +16,7 @@
 #define TAB_FWD LC(TAB)
 #define TAB_BK LC(LS(TAB))
 
-#define WN_SNIP LG(LS(KC_S))
+#define WN_SNIP LG(LS(S))
 
 #define SL_UP K_SCROLL_UP
 #define SL_DN K_SCROLL_DOWN
