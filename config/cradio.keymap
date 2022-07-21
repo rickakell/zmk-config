@@ -7,8 +7,8 @@
 #define NAV 2
 #define FNC 3
 
-#define VL_UP &none
-#define VL_DN &none
+#define VL_UP C_VOL_UP
+#define VL_DN C_VOL_DN
 
 #define WN_FWD LA(TAB)
 #define WN_BK LA(LS(TAB))
