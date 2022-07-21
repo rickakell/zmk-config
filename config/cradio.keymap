@@ -79,9 +79,9 @@
 
 		function_layer {
 		bindings = <
-            &none   &kp N6 &kp N5 &kp N4 &TD_LDR   &kp F8 &kp F9   &kp F10   &kp F11    &kp F12
-            &kp N0  &kp N3 &kp N2 &kp N1 &none     &kp F7 &sk RALT &sk RCTRL &sk RSHFT &sk RGUI
-            &kp DOT &kp N9 &kp N8 &kp N7 &kp F13   &kp F6 &kp F5   &kp F4    &kp F3     &kp F2
+            &none   &kp N6 &kp N5 &kp N4 &TD_LDR   &kp F8 &kp F9    &kp F10   &kp F11  &kp F12
+            &kp N0  &kp N3 &kp N2 &kp N1 &none     &kp F7 &sk RSHFT &sk RCTRL &sk RALT &sk RGUI
+            &kp DOT &kp N9 &kp N8 &kp N7 &kp F13   &kp F6 &kp F5    &kp F4    &kp F3   &kp F2
 					               &trans &trans   &kp F1 &trans
 		>;
 		};
