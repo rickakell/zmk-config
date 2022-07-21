@@ -103,7 +103,7 @@
 		bindings = <
         &kp TAB_FWD &kp TAB_BK &kp WN_FWD &kp WN_BK VOL_UP     &kp CAPS &kp HOME  &kp UP    &kp END   &kp DEL
         &sk LGUI    &sk LSHFT  &sk LCTRL  &sk LALT  &kp TAB    &kp ESC  &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC
-        &kp LC(Z)   &kp LC(Y)  &TD_CPY_CT &kp LC(V) VOL_DWN    &kp C_AC_SCROLL_UP &kp PG_UP &kp PG_DN &none     &kp LC(S)
+        &kp LC(Z)   &kp LC(Y)  &TD_CPY_CT &kp LC(V) VOL_DWN    &kp PG_UP &kp C_AC_SCROLL_UP &kp C_AC_SCROLL_DOWN &kp PG_DN &kp LC(S)
 					                          &trans  &none    &kp ENTER &trans
 		>;
 		};
