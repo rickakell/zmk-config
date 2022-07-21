@@ -7,8 +7,8 @@
 #define NAV 2
 #define FNC 3
 
-#define VOL_UP &none
-#define VOL_DWN &none
+#define VL_UP C_VOL_UP
+#define VL_DN C_VOL_DN
 
 #define WN_FWD LA(TAB)
 #define WN_BK LA(LS(TAB))
@@ -18,8 +18,8 @@
 
 #define WN_SNIP LG(LS(S))
 
-#define SL_UP K_SCROLL_UP
-#define SL_DN K_SCROLL_DOWN
+#define SL_UP C_AC_SCROLL_UP
+#define SL_DN C_AC_SCROLL_DOWN
 
 #define STICKY_KEY_TIMEOUT 60000
 &sk {
@@ -106,10 +106,10 @@
 
        	navigation_layer {
 		bindings = <
-        &kp TAB_FWD &kp TAB_BK &kp WN_FWD &kp WN_BK VOL_UP     &kp CAPS  &kp HOME  &kp UP    &kp END   &kp DEL
-        &sk LGUI    &sk LALT   &sk LCTRL  &sk LSHFT &kp TAB    &kp ESC   &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC
-        &kp LC(Z)   &kp LC(Y)  &TD_CPY_CT &kp LC(V) VOL_DWN    &kp PG_UP &kp SL_UP &kp SL_DN &kp PG_DN &none
-					                         &trans WN_SNIP    &kp ENTER &trans
+        &kp TAB_FWD &kp TAB_BK &kp WN_FWD &kp WN_BK &kp VL_UP    &kp CAPS  &kp HOME  &kp UP    &kp END   &kp DEL
+        &sk LGUI    &sk LALT   &sk LCTRL  &sk LSHFT &kp TAB      &kp ESC   &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC
+        &kp LC(Z)   &kp LC(Y)  &TD_CPY_CT &kp LC(V) &kp VL_DN    &kp PG_UP &kp SL_UP &kp SL_DN &kp PG_DN &none
+					                           &trans WN_SNIP    &kp ENTER &trans
 		>;
 		};
 
