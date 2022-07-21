@@ -18,7 +18,8 @@
 
 #define WN_SNIP LG(LS(KC_S))
 
-#define SCRL_UP K_SCROLL_UP
+#define SL_UP K_SCROLL_UP
+#define SL_DN K_SCROLL_DOWN
 
 #define STICKY_KEY_TIMEOUT 60000
 &sk {
