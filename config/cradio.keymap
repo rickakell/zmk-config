@@ -21,6 +21,11 @@
 #define SL_UP C_AC_SCROLL_UP
 #define SL_DN C_AC_SCROLL_DOWN
 
+#define B0 BT_SEL 0
+#define B1 BT_SEL 1
+#define B2 BT_SEL 2
+#define B3 BT_SEL 3
+
 #define STICKY_KEY_TIMEOUT 60000
 &sk {
     ignore-modifiers;
@@ -83,6 +88,15 @@
             &kp N0  &kp N3 &kp N2 &kp N1 &none     &kp F7 &sk RSHFT &sk RCTRL &sk RALT &sk RGUI
             &kp DOT &kp N9 &kp N8 &kp N7 &kp F13   &kp F6 &kp F5    &kp F4    &kp F3   &kp F2
 					               &trans &trans   &kp F1 &trans
+		>;
+		};
+
+        keyboard_utility_layer {
+		bindings = <
+            &none  &none  &none  &none  &TD_LDR      &TD_LDR    &none &none &none &none
+            &bt B0 &bt B3 &bt B2 &bt B1 &none        &none      &none &none &none &none
+            &none  &none  &none  &none  &bt BT_CLR   &bt BT_CLR &none &none &none &none
+					             &trans &trans       &trans &trans
 		>;
 		};
 

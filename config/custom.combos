@@ -55,4 +55,10 @@ combos {
         bindings = <&kp BSPC>;
     };
 
+    combo_right_top_backspace {
+        timeout-ms = <200>;
+        key-positions = <6 7 8>;
+        bindings = <&to 5>;
+    };
+
 };
