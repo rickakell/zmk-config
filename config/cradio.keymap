@@ -57,19 +57,19 @@
 
         default_layer {
         bindings = <
-            &kp QUOT &kp COMMA &kp DOT &kp R &kp T     &kp F &kp G &kp C &kp R &kp L
-            &kp A    &kp O     &kp E   &kp U &kp I     &kp D &kp H &kp T &kp N &kp S
-            &kp Z    &kp Q     &kp J   &kp K &kp X     &kp B &kp M &kp W &kp V &kp Z
-                                    &mo NAV &kp LSHFT     &kp SPC &mo SYM
+            &kp QUOT &kp COMMA &kp DOT &kp R &kp T   &kp F &kp G &kp C &kp R &kp L
+            &kp A    &kp O     &kp E   &kp U &kp I   &kp D &kp H &kp T &kp N &kp S
+            &kp Z    &kp Q     &kp J   &kp K &kp X   &kp B &kp M &kp W &kp V &kp Z
+                                 &mo NAV &kp LSHFT   &kp SPC &mo SYM
         >;
         };
 
         navigation_layer {
         bindings = <
-            &kp TAB_FWD &kp TAB_BK &kp WN_FWD &kp WN_BK &kp VL_UP    &kp CAPS  &kp HOME  &kp UP    &kp END   &kp DEL
-            &sk LGUI    &sk LALT   &sk LCTRL  &sk LSHFT &kp TAB      &kp ESC   &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC
-            &kp LC(Z)   &kp LC(Y)  &TD_CPY_CT &kp LC(V) &kp VL_DN    &kp PG_UP &kp SL_UP &kp SL_DN &kp PG_DN &none
-                                               &trans &kp WN_SNIP    &kp ENTER &trans
+            &kp TAB_FWD &kp TAB_BK &kp WN_FWD &kp WN_BK &kp VL_UP   &kp CAPS  &kp HOME  &kp UP    &kp END   &kp DEL
+            &sk LGUI    &sk LALT   &sk LCTRL  &sk LSHFT &kp TAB     &kp ESC   &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC
+            &kp LC(Z)   &kp LC(Y)  &TD_CPY_CT &kp LC(V) &kp VL_DN   &kp PG_UP &kp SL_UP &kp SL_DN &kp PG_DN &none
+                                               &trans &kp WN_SNIP   &kp ENTER &trans
         >;
         };
 
