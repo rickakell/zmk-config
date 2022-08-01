@@ -7,6 +7,18 @@ combos {
         bindings = <&kp LGUI>;
     };
 
+    combo_left_vertical_game_layer_toggle {
+        timeout-ms = <50>;
+        key-positions = <10 20>;
+        bindings = <&kp ENTER>;
+    };
+
+    combo_right_vertical_game_layer_toggle {
+        timeout-ms = <50>;
+        key-positions = <19 29>;
+        bindings = <&kp ENTER>;
+    };
+
     combo_left_vertical_enter {
         timeout-ms = <50>;
         key-positions = <1 11>;
