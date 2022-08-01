@@ -55,7 +55,7 @@ combos {
         bindings = <&kp BSPC>;
     };
 
-    combo_right_top_backspace {
+    combo_left_top_utility_layer_toggle {
         timeout-ms = <200>;
         key-positions = <6 7 8>;
         bindings = <&to 5>;
