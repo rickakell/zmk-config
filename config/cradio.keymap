@@ -115,10 +115,10 @@
 
         keyboard_utility_layer {
         bindings = <
-            &none  &none  &none  &none  &TD_LDR      &TD_LDR    &none &none &none &none
-            &bt B0 &bt B3 &bt B2 &bt B1 &none        &none      &none &none &none &none
-            &none  &none  &none  &none  &bt BT_CLR   &bt BT_CLR &none &none &none &none
-                                     &trans &trans   &trans &trans
+            &none  &none  &none  &none  &TD_LDR      &TD_LDR    &none  &none  &none  &none
+            &bt B0 &bt B3 &bt B2 &bt B1 &none        &none      &bt B0 &bt B3 &bt B2 &bt B1
+            &none  &none  &none  &none  &bt BT_CLR   &bt BT_CLR &none  &none  &none  &none
+                                    &to DEF &trans   &trans &to DEF
         >;
         };
 
