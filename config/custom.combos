@@ -70,13 +70,13 @@ combos {
     combo_left_top_utility_layer_toggle {
         timeout-ms = <200>;
         key-positions = <1 2 3>;
-        bindings = <&to 5>;
+        bindings = <&to 4>;
     };
 
     combo_right_top_utility_layer_toggle {
         timeout-ms = <200>;
         key-positions = <6 7 8>;
-        bindings = <&to 5>;
+        bindings = <&to 4>;
     };
 
 };
