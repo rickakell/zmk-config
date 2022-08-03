@@ -24,6 +24,8 @@
 #define B1 BT_SEL 1
 #define B2 BT_SEL 2
 #define B3 BT_SEL 3
+#define B4 BT_SEL 4
+#define B5 BT_SEL 5
 
 #define STICKY_KEY_TIMEOUT 60000
 &sk {
