@@ -70,6 +70,15 @@
     keymap {
         compatible = "zmk,keymap";
 
+        keyboard_utility_layer {
+        bindings = <
+            &none        &bt BT_SEL 6 &bt BT_SEL 5 &bt BT_SEL 4 &bootloader   &bootloader &bt BT_SEL 4 &bt BT_SEL 5 &bt BT_SEL 6 &none
+            &bt BT_SEL 0 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &none         &none       &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 0
+            &kp A        &bt BT_PRV   &none        &bt BT_NXT   &bt BT_CLR    &bt BT_CLR  &bt BT_NXT   &none        &bt BT_PRV   &kp A
+                                                                &kp A &kp A   &kp A &kp A
+        >;
+        };
+
         default_layer {
         bindings = <
             &kp QUOT &kp COMMA &kp DOT &kp P &kp Y   &kp F &kp G &kp C &kp R &kp L
