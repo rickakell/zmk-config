@@ -19,7 +19,7 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
-COMBO(gui &kp LGUI, 12 13, ALPHAS)
+COMBO(gui, &kp LGUI, 12 13, ALPHAS)
 
 COMBO(left_vertical_game_layer_toggle, &to 5, 10 20, APLHAS)
 COMBO(right_vertical_game_layer_toggle, &to 5, 19 29, APLHAS)
