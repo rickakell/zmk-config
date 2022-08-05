@@ -49,9 +49,9 @@
 
         TD_CTRL_ALT: tap_dance_control_alt {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_COPY_CUT";
+            label = "TAP_DANCE_Control_Alt";
             #binding-cells = <0>;
-            bindings = <&kp LC(C)>, <&kp LC(X)>;
+            bindings = <&kp LCTRL>, <&kp LALT>;
         };
     };
 
