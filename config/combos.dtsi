@@ -21,8 +21,8 @@ compatible = "zmk,combos";
 
 COMBO(gui, &kp LGUI, 12 13, ALPHA_LAYERS)
 
-COMBO(left_vertical_game_layer_toggle, &to 5, 10 20, ALPHA_LAYERS)
-COMBO(right_vertical_game_layer_toggle, &to 5, 19 29, ALPHA_LAYERS)
+COMBO(left_vertical_game_layer_toggle, &to GME, 10 20, ALPHA_LAYERS)
+COMBO(right_vertical_game_layer_toggle, &to GME, 19 29, ALPHA_LAYERS)
 
 COMBO(left_vertical_enter, &kp ENTER, 1 11, ALPHA_LAYERS)
 COMBO(right_vertical_enter, &kp ENTER, 8 18, ALPHA_LAYERS)
