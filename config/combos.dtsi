@@ -1,5 +1,3 @@
-#include "layers.dtsi"
-
 #define APLHA_LAYERS DEF
 
 compatible = "zmk,combos";
