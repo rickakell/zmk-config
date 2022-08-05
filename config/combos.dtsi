@@ -1,3 +1,5 @@
+#include <layers.dtsi>
+
 compatible = "zmk,combos";
 
 combo_gui {
@@ -9,13 +11,13 @@ combo_gui {
 combo_left_vertical_game_layer_toggle {
     timeout-ms = <50>;
     key-positions = <10 20>;
-    bindings = <&to 5>;
+    bindings = <&to GME>;
 };
 
 combo_right_vertical_game_layer_toggle {
     timeout-ms = <50>;
     key-positions = <19 29>;
-    bindings = <&to 5>;
+    bindings = <&to GME>;
 };
 
 combo_left_vertical_enter {
@@ -69,11 +71,11 @@ combo_right_vertical_backspace {
 combo_left_top_utility_layer_toggle {
     timeout-ms = <200>;
     key-positions = <1 2 3>;
-    bindings = <&to 4>;
+    bindings = <&to UTL>;
 };
 
 combo_right_top_utility_layer_toggle {
     timeout-ms = <200>;
     key-positions = <6 7 8>;
-    bindings = <&to 4>;
+    bindings = <&to UTL>;
 };
