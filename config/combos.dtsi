@@ -19,22 +19,22 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
-COMBO(gui &kp LGUI, 12 13)
+COMBO(gui &kp LGUI, 12 13, ALPHAS)
 
-COMBO(left_vertical_game_layer_toggle &to 5, 10 20, APLHAS)
-COMBO(right_vertical_game_layer_toggle &to 5, 19 29, APLHAS)
+COMBO(left_vertical_game_layer_toggle, &to 5, 10 20, APLHAS)
+COMBO(right_vertical_game_layer_toggle, &to 5, 19 29, APLHAS)
 
-COMBO(left_vertical_enter &kp ENTER, 1 11, APLHAS)
-COMBO(right_vertical_enter &kp ENTER, 8 18, APLHAS)
+COMBO(left_vertical_enter, &kp ENTER, 1 11, APLHAS)
+COMBO(right_vertical_enter, &kp ENTER, 8 18, APLHAS)
 
-COMBO(left_vertical_escape &kp ESC, 2 12, APLHAS)
-COMBO(right_vertical_escape &kp ESC, 7 17, APLHAS)
+COMBO(left_vertical_escape, &kp ESC, 2 12, APLHAS)
+COMBO(right_vertical_escape, &kp ESC, 7 17, APLHAS)
 
-COMBO(left_vertical_delete &kp DEL, 3 13, APLHAS)
-COMBO(right_vertical_delete &kp DEL, 6 16, APLHAS)
+COMBO(left_vertical_delete, &kp DEL, 3 13, APLHAS)
+COMBO(right_vertical_delete, &kp DEL, 6 16, APLHAS)
 
-COMBO(left_vertical_backspace &kp BSPC, 4 14, APLHAS)
-COMBO(right_vertical_backspace &kp BSPC, 5 15, APLHAS)
+COMBO(left_vertical_backspace, &kp BSPC, 4 14, APLHAS)
+COMBO(right_vertical_backspace, &kp BSPC, 5 15, APLHAS)
 
 GLOBAL_COMBO(left_bottom_utility_layer_toggle, &to UTL, 21 22 23)
 GLOBAL_COMBO(right_bottom_utility_layer_toggle, &to UTL, 26 27 28)
