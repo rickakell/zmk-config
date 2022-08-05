@@ -1,4 +1,4 @@
-#include <layers.dtsi>
+#include "layers.dtsi"
 
 #define APLHA_LAYERS DEF
 
