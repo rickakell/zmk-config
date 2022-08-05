@@ -1,0 +1,40 @@
+#include "layers.dtsi"
+
+#define ALPHA_LAYERS DEF
+
+compatible = "zmk,combos";
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    timeout-ms = <30>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+  };
+
+#define GLOBAL_COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    timeout-ms = <50>; \
+    key-positions = <KEYPOS>; \
+  };
+
+COMBO(gui, &kp LGUI, 12 13, ALPHA_LAYERS)
+
+COMBO(left_vertical_game_layer_toggle, &to GME, 10 20, ALPHA_LAYERS)
+COMBO(right_vertical_game_layer_toggle, &to GME, 19 29, ALPHA_LAYERS)
+
+COMBO(left_vertical_enter, &kp ENTER, 1 11, ALPHA_LAYERS)
+COMBO(right_vertical_enter, &kp ENTER, 8 18, ALPHA_LAYERS)
+
+COMBO(left_vertical_escape, &kp ESC, 2 12, ALPHA_LAYERS)
+COMBO(right_vertical_escape, &kp ESC, 7 17, ALPHA_LAYERS)
+
+COMBO(left_vertical_delete, &kp DEL, 3 13, ALPHA_LAYERS)
+COMBO(right_vertical_delete, &kp DEL, 6 16, ALPHA_LAYERS)
+
+COMBO(left_vertical_backspace, &kp BSPC, 4 14, ALPHA_LAYERS)
+COMBO(right_vertical_backspace, &kp BSPC, 5 15, ALPHA_LAYERS)
+
+GLOBAL_COMBO(left_bottom_utility_layer_toggle, &to UTL, 21 22 23)
+GLOBAL_COMBO(right_bottom_utility_layer_toggle, &to UTL, 26 27 28)
