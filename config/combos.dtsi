@@ -1,4 +1,4 @@
-#define APLHA_LAYERS DEF
+#define ALPHA_LAYERS DEF
 
 compatible = "zmk,combos";
 
