@@ -1,11 +1,7 @@
+#include <layers.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-
-#define DEF 0
-#define NAV 1
-#define SYM 2
-#define FNC 3
 
 #define VL_UP C_VOL_UP
 #define VL_DN C_VOL_DN
