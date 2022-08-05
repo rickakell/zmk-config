@@ -1,81 +1,40 @@
 #include <layers.dtsi>
 
+#define APLHA_LAYERS DEF
+
 compatible = "zmk,combos";
 
-combo_gui {
-    timeout-ms = <50>;
-    key-positions = <12 13>;
-    bindings = <&kp LGUI>;
-};
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    timeout-ms = <30>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+  };
 
-combo_left_vertical_game_layer_toggle {
-    timeout-ms = <50>;
-    key-positions = <10 20>;
-    bindings = <&to GME>;
-};
+#define GLOBAL_COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    timeout-ms = <50>; \
+    key-positions = <KEYPOS>; \
+  };
 
-combo_right_vertical_game_layer_toggle {
-    timeout-ms = <50>;
-    key-positions = <19 29>;
-    bindings = <&to GME>;
-};
+COMBO(gui &kp LGUI, 12 13)
 
-combo_left_vertical_enter {
-    timeout-ms = <50>;
-    key-positions = <1 11>;
-    bindings = <&kp ENTER>;
-};
+COMBO(left_vertical_game_layer_toggle &to 5, 10 20, APLHAS)
+COMBO(right_vertical_game_layer_toggle &to 5, 19 29, APLHAS)
 
-combo_right_vertical_enter {
-    timeout-ms = <50>;
-    key-positions = <8 18>;
-    bindings = <&kp ENTER>;
-};
+COMBO(left_vertical_enter &kp ENTER, 1 11, APLHAS)
+COMBO(right_vertical_enter &kp ENTER, 8 18, APLHAS)
 
-combo_left_vertical_escape {
-    timeout-ms = <50>;
-    key-positions = <2 12>;
-    bindings = <&kp ESC>;
-};
+COMBO(left_vertical_escape &kp ESC, 2 12, APLHAS)
+COMBO(right_vertical_escape &kp ESC, 7 17, APLHAS)
 
-combo_right_vertical_escape {
-    timeout-ms = <50>;
-    key-positions = <7 17>;
-    bindings = <&kp ESC>;
-};
+COMBO(left_vertical_delete &kp DEL, 3 13, APLHAS)
+COMBO(right_vertical_delete &kp DEL, 6 16, APLHAS)
 
-combo_left_vertical_delete {
-    timeout-ms = <50>;
-    key-positions = <3 13>;
-    bindings = <&kp DEL>;
-};
+COMBO(left_vertical_backspace &kp BSPC, 4 14, APLHAS)
+COMBO(right_vertical_backspace &kp BSPC, 5 15, APLHAS)
 
-combo_right_vertical_delete {
-    timeout-ms = <50>;
-    key-positions = <6 16>;
-    bindings = <&kp DEL>;
-};
-
-combo_left_vertical_backspace {
-    timeout-ms = <50>;
-    key-positions = <4 14>;
-    bindings = <&kp BSPC>;
-};
-
-combo_right_vertical_backspace {
-    timeout-ms = <50>;
-    key-positions = <5 15>;
-    bindings = <&kp BSPC>;
-};
-
-combo_left_top_utility_layer_toggle {
-    timeout-ms = <200>;
-    key-positions = <1 2 3>;
-    bindings = <&to UTL>;
-};
-
-combo_right_top_utility_layer_toggle {
-    timeout-ms = <200>;
-    key-positions = <6 7 8>;
-    bindings = <&to UTL>;
-};
+GLOBAL_COMBO(left_bottom_utility_layer_toggle, &to UTL, 21 22 23)
+GLOBAL_COMBO(right_bottom_utility_layer_toggle, &to UTL, 26 27 28)
