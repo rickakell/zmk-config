@@ -1,0 +1,6 @@
+#define DEF 0
+#define NAV 1
+#define SYM 2
+#define FNC 3
+#define UTL 4
+#define GME 5

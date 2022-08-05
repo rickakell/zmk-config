@@ -1,3 +1,5 @@
+#include "layers.dtsi"
+
 #define ALPHA_LAYERS DEF
 
 compatible = "zmk,combos";
