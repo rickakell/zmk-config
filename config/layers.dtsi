@@ -4,3 +4,4 @@
 #define FNC 3
 #define UTL 4
 #define GME 5
+#define CAN 6

@@ -1,0 +1,8 @@
+canary_layer {
+bindings = <
+    &kp w &kp l &kp y &kp p &kp b   &kp z &kp f &kp o    &kp u     &kp QUOT
+    &kp c &kp r &kp s &kp t &kp g   &kp m &kp n &kp e    &kp i     &kp a
+    &kp q &kp j &kp v &kp d &kp k   &kp x &kp h &kp FSLH &kp COMMA &kp DOT
+                &mo NAV &kp LSHFT   &kp SPC &mo SYM
+>;
+};

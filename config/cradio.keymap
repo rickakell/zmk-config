@@ -142,5 +142,7 @@
         >;
         };
 
+        #include "alternate_alpha_layers.dtsi"
+
     };
 };
