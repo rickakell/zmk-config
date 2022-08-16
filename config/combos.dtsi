@@ -1,6 +1,6 @@
 #include "layers.dtsi"
 
-#define ALPHA_LAYERS DEF CAN
+#define ALPHA_LAYERS DEF CAN COL
 
 compatible = "zmk,combos";
 
@@ -23,6 +23,7 @@ COMBO(gui, &kp LGUI, 12 13, ALPHA_LAYERS)
 COMBO(return_to_alpha_from_game, &to DEF, 1 3, GME)
 
 COMBO(toggle_canary, &to CAN, 0 2 4, ALPHA_LAYERS)
+COMBO(toggle_colemak, &to COL, 10 12 14, ALPHA_LAYERS)
 
 COMBO(left_vertical_game_layer_toggle, &to GME, 10 20, ALPHA_LAYERS)
 COMBO(right_vertical_game_layer_toggle, &to GME, 19 29, ALPHA_LAYERS)
