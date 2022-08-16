@@ -29,7 +29,7 @@
 };
 
 &mt {
-    tapping-term-ms = <50>;
+    tapping-term-ms = <100>;
 };
 
 / {
