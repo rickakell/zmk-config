@@ -1,3 +1,4 @@
+// https://github.com/Apsu/Canary
 canary_layer {
 bindings = <
     &kp W &kp L &kp Y &kp P &kp B   &kp Z &kp F &kp O    &kp U     &kp QUOT
