@@ -56,13 +56,6 @@
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <3 13>;
         };
-
-        MT_CTRL_ALT: tap_dance_control_alt {
-            compatible = "zmk,behavior-mod-tap";
-            label = "Mod_Tap_Control_Alt";
-            #binding-cells = <0>;
-            bindings = <&kp LALT>, <&kp LCTRL>;
-        };
     };
 
     conditional_layers {
@@ -130,7 +123,7 @@
             &kp ESC   &kp Q &kp W &kp E &kp R   &kp T &kp Y    &kp UP   &kp I     &kp O
             &kp LSHFT &kp A &kp S &kp D &kp F   &kp G &kp LEFT &kp DOWN &kp RIGHT &kp L
             &kp TAB   &kp Z &kp X &kp C &kp V   &kp B &kp N    &kp M    &kp COMMA &kp DOT
-                       &TD_CTRL_ALT &kp SPACE   &trans &to DEF
+                     &mt LALT LCTRL &kp SPACE   &trans &to DEF
         >;
         };
 
