@@ -52,6 +52,15 @@
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <3 13>;
         };
+
+        HT_CTRL_KP: hold_tap_control_key_press {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_CONTROL_KEY_PRESS";
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&SL_CTRL>;
+        };
     };
 
     conditional_layers {
@@ -67,7 +76,7 @@
     };
 
     macros {
-        SL_CTRL: Macro_Sleep_CTRL {
+        SL_CTRL: macro_sleep_control {
             label = "Slow tap control macro";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -129,7 +138,7 @@
             &kp ESC   &kp Q &kp W &kp E &kp R   &kp T &kp Y    &kp UP   &kp I     &kp O
             &kp LSHFT &kp A &kp S &kp D &kp F   &kp G &kp LEFT &kp DOWN &kp RIGHT &kp L
             &kp TAB   &kp Z &kp X &kp C &kp V   &kp B &kp N    &kp M    &kp COMMA &kp DOT
-                   &mt LALT SL_CTRL &kp SPACE   &trans &to DEF
+                 &HT_CTRL_KP LALT 0 &kp SPACE   &trans &to DEF
         >;
         };
 
