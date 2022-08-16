@@ -71,11 +71,8 @@
             label = "Slow tap control macro";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_wait_time 150>
-                , <&macro_press &kp LCTRL>
-                , <&macro_release &kp LCTRL>
-                ;
+            tap-ms = <150>;
+            bindings = <&kp LCTRL>;
         };
     };
 
@@ -132,7 +129,7 @@
             &kp ESC   &kp Q &kp W &kp E &kp R   &kp T &kp Y    &kp UP   &kp I     &kp O
             &kp LSHFT &kp A &kp S &kp D &kp F   &kp G &kp LEFT &kp DOWN &kp RIGHT &kp L
             &kp TAB   &kp Z &kp X &kp C &kp V   &kp B &kp N    &kp M    &kp COMMA &kp DOT
-                  &mt LALT &SL_CTRL &kp SPACE   &trans &to DEF
+                   &mt LALT SL_CTRL &kp SPACE   &trans &to DEF
         >;
         };
 
