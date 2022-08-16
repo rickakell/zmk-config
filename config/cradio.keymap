@@ -68,10 +68,11 @@
 
     macros {
         SL_CTRL: Macro_Sleep_CTRL {
+            label = "Slow tap control macro";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_wait_time 200>
+                = <&macro_wait_time 150>
                 , <&macro_press &kp LCTRL>
                 , <&macro_release &kp LCTRL>
                 ;
