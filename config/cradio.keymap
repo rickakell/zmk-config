@@ -29,6 +29,10 @@
     release-after-ms = <STICKY_KEY_TIMEOUT>;
 };
 
+&mt {
+    tapping-term-ms = <50>;
+};
+
 / {
 
     behaviors {
@@ -46,13 +50,6 @@
             bindings = <&kp LC(C)>, <&kp LC(X)>;
         };
 
-        TD_CTRL_ALT: tap_dance_control_alt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_Control_Alt";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&kp LALT>;
-        };
-
         TS_WN_FWD: tri_state_swap_window_forward {
             compatible = "zmk,behavior-tri-state";
             label = "SWAPPER";
@@ -60,7 +57,16 @@
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <3 13>;
         };
+
+        MT_CTRL_ALT: tap_dance_control_alt {
+            compatible = "zmk,behavior-mod-tap";
+            label = "Mod_Tap_Control_Alt";
+            #binding-cells = <0>;
+            bindings = <&kp LALT>, <&kp LCTRL>;
+        };
     };
+
+
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
