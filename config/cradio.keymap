@@ -24,10 +24,8 @@
 #define B4 BT_SEL 4
 #define B5 BT_SEL 5
 
-#define STICKY_KEY_TIMEOUT 60000
 &sk {
     ignore-modifiers;
-    release-after-ms = <STICKY_KEY_TIMEOUT>;
 };
 
 &mt {
