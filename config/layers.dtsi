@@ -7,3 +7,4 @@
 #define CAN 6
 #define COL 7
 #define QWE 8
+#define HDN 9

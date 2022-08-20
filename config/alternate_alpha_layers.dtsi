@@ -26,3 +26,13 @@ bindings = <
                 &mo NAV &kp LSHFT   &kp SPC &mo SYM
 >;
 };
+
+// https://sites.google.com/alanreiser.com/handsdown
+hands_down_layer {
+bindings = <
+    &kp W &kp F &kp M &kp P &kp V   &kp SEMI  &kp Z &kp Q &kp J &kp K
+    &kp R &kp S &kp N &kp T &kp G   &kp COMMA &kp A &kp E &kp I &kp H
+    &kp X &kp C &kp L &kp D &kp B   &kp DOT   &kp U &kp O &kp Y &kp QUOT
+                &mo NAV &kp LSHFT   &kp SPC &mo SYM
+>;
+};
