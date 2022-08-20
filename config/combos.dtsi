@@ -39,3 +39,5 @@ COMBO(right_vertical_backspace, &kp BSPC, 5 15, ALPHA_LAYERS)
 
 GLOBAL_COMBO(left_bottom_utility_layer_toggle, &to UTL, 21 22 23)
 GLOBAL_COMBO(right_bottom_utility_layer_toggle, &to UTL, 26 27 28)
+
+GLOBAL_COMBO(momentary_on_function_layer, &mo FNC, 30 31)
