@@ -1,6 +1,6 @@
 #include "layers.dtsi"
 
-#define ALPHA_LAYERS DEF CAN COL HDN
+#define ALPHA_LAYERS DEF CAN COL QWE HDN
 
 compatible = "zmk,combos";
 
