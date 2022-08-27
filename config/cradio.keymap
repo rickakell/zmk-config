@@ -6,8 +6,7 @@
 #define VL_UP C_VOL_UP
 #define VL_DN C_VOL_DN
 
-#define WN_FWD LA(TAB)
-#define WN_BK LA(LS(TAB))
+#define WN_BK LS(TAB)
 
 #define TAB_FWD LC(TAB)
 #define TAB_BK LC(LS(TAB))
@@ -26,6 +25,10 @@
 
 &sk {
     ignore-modifiers;
+};
+
+&mt {
+    tapping-term-ms = <50>;
 };
 
 / {
@@ -63,6 +66,8 @@
         };
     };
 
+
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_function_layer {
@@ -99,7 +104,7 @@
 
         navigation_layer {
         bindings = <
-            &kp TAB_FWD &kp TAB_BK &kp WN_FWD &kp WN_BK &kp VL_UP   &kp CAPS  &kp HOME  &kp UP    &kp END   &kp DEL
+            &kp TAB_FWD &kp TAB_BK &TS_WN_FWD &kp WN_BK &kp VL_UP   &kp CAPS  &kp HOME  &kp UP    &kp END   &kp DEL
             &sk LGUI    &sk LALT   &sk LCTRL  &sk LSHFT &kp TAB     &kp ESC   &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC
             &kp LC(Z)   &kp LC(Y)  &TD_CPY_CT &kp LC(V) &kp VL_DN   &kp PG_UP &kp SL_UP &kp SL_DN &kp PG_DN &kp K_CANCEL
                                                &trans &kp WN_SNIP   &kp ENTER &trans
