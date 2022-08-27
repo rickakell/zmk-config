@@ -106,9 +106,9 @@
 
         navigation_layer {
         bindings = <
-            &kp TAB_FWD &kp TAB_BK &TS_WN_FWD &kp WN_BK &kp VL_UP   &kp CAPS  &kp HOME  &kp UP    &kp END   &kp DEL
-            &sk LGUI    &sk LALT   &sk LCTRL  &sk LSHFT &kp TAB     &kp ESC   &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC
-            &kp LC(Z)   &kp LC(Y)  &TD_CPY_CT &kp LC(V) &kp VL_DN   &kp PG_UP &kp SL_UP &kp SL_DN &kp PG_DN &kp K_CANCEL
+            &kp TAB_BK &kp TAB_FWD &TS_WN_FWD &kp WN_BK &kp VL_UP   &kp CAPS  &kp HOME  &kp UP    &kp END   &kp DEL
+            &sk LGUI   &sk LALT    &sk LCTRL  &sk LSHFT &kp TAB     &kp ESC   &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC
+            &kp LC(Z)  &kp LC(Y)   &TD_CPY_CT &kp LC(V) &kp VL_DN   &kp PG_UP &kp SL_UP &kp SL_DN &kp PG_DN &kp K_CANCEL
                                                &trans &kp WN_SNIP   &kp ENTER &trans
         >;
         };
