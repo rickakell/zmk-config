@@ -1,6 +1,10 @@
 #define DEF 0
-#define NAV 1
-#define SYM 2
-#define FNC 3
-#define UTL 4
-#define GME 5
+#define CAN 1 // Canary
+#define COL 2 // Colemak
+#define QWE 3 // Qwerty
+#define HDN 4 // Hands Down Neu
+#define NAV 5
+#define SYM 6
+#define FNC 7
+#define UTL 8
+#define GME 9

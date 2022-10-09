@@ -1,6 +1,6 @@
 #include "layers.dtsi"
 
-#define ALPHA_LAYERS DEF
+#define ALPHA_LAYERS DEF CAN COL QWE HDN
 
 compatible = "zmk,combos";
 
@@ -22,6 +22,11 @@ compatible = "zmk,combos";
 COMBO(gui, &kp LGUI, 12 13, ALPHA_LAYERS)
 COMBO(return_to_alpha_from_game, &to DEF, 1 3, GME)
 
+COMBO(toggle_canary, &to CAN, 5 7 9, ALPHA_LAYERS)
+COMBO(toggle_colemak, &to COL, 15 17 19, ALPHA_LAYERS)
+COMBO(toggle_qwerty, &to QWE, 25 27 29, ALPHA_LAYERS)
+COMBO(toggle_hands_down, &to HDN, 0 2 4, ALPHA_LAYERS)
+
 COMBO(left_vertical_game_layer_toggle, &to GME, 10 20, ALPHA_LAYERS)
 COMBO(right_vertical_game_layer_toggle, &to GME, 19 29, ALPHA_LAYERS)
 
@@ -39,3 +44,6 @@ COMBO(right_vertical_backspace, &kp BSPC, 5 15, ALPHA_LAYERS)
 
 GLOBAL_COMBO(left_bottom_utility_layer_toggle, &to UTL, 21 22 23)
 GLOBAL_COMBO(right_bottom_utility_layer_toggle, &to UTL, 26 27 28)
+
+GLOBAL_COMBO(left_return_to_default, &to DEF, 10 11 13 14)
+GLOBAL_COMBO(right_return_to_default, &to DEF, 15 16 18 19)
