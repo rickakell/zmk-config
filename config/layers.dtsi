@@ -1,7 +1,7 @@
 #define DEF 0
 #define CAN 1 // Canary
 #define COL 2 // Colemak
-#define QWE 3 // Qwerty
+#define DVK 3 // Dvorak
 #define HDN 4 // Hands Down Neu
 #define NAV 5
 #define SYM 6
