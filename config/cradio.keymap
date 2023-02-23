@@ -115,28 +115,28 @@
 
         symbol_layer {
         bindings = <
-            &kp GRAVE &kp LBKT &kp LPAR  &kp LBRC  &kp TILDE   &kp CARET &kp RBRC &kp RPAR  &kp RBKT  &kp GRAVE
+            &kp GRAVE &kp LBKT &kp LPAR  &kp LBRC  &kp TILDE   &kp CARET &kp RBRC  &kp RPAR  &kp RBKT  &kp GRAVE
             &kp MINUS &kp STAR &kp EQUAL &kp UNDER &kp DLLR    &kp HASH  &sk RSHFT &sk RCTRL &sk RALT &sk RGUI
-            &kp PLUS  &kp PIPE &kp AT    &kp BSLH  &kp PRCNT   &kp AMPS  &kp FSLH &kp QMARK &kp COLON &kp EXCL
+            &kp PLUS  &kp PIPE &kp AT    &kp BSLH  &kp PRCNT   &kp AMPS  &kp FSLH  &kp QMARK &kp COLON &kp EXCL
                                              &trans &kp LCTL   &kp SPC  &trans
         >;
         };
 
         function_layer {
         bindings = <
-            &none   &kp N6 &kp N5 &kp N4 &TD_LDR   &kp F8 &kp F9    &kp F10   &kp F11  &kp F12
-            &kp N0  &kp N3 &kp N2 &kp N1 &none     &kp F7 &sk RSHFT &sk RCTRL &sk RALT &sk RGUI
-            &kp DOT &kp N9 &kp N8 &kp N7 &kp F13   &kp F6 &kp F5    &kp F4    &kp F3   &kp F2
-                                   &trans &trans   &kp F1 &trans
+            &kp F9   &kp F7   &kp F1    &kp F3    &kp F5    &kp F4  &kp F2    &kp F10   &kp F6    &kp F8
+            &kp N9   &kp N7   &kp N1    &kp N3    &kp N5    &kp N4  &kp N2    &kp N0    &kp N6    &kp N8
+            &kp LGUI &sk LALT &sk LCTRL &sk LSHFT &sk F11   &kp F12 &sk RSHFT &sk RCTRL &sk RALT  &sk RGUI
+                                          &trans &kp F13    &kp F14 &trans
         >;
-        };
+        }
 
         keyboard_utility_layer {
         bindings = <
-            &none  &kp A      &bt B5 &bt B4     &bootloader   &bootloader &bt B4     &bt B5 &kp A      &none
-            &bt B0 &bt B3     &bt B2 &bt B1     &none         &none       &bt B1     &bt B2 &bt B3     &bt B0
-            &none  &bt BT_PRV &kp A  &bt BT_NXT &bt BT_CLR    &bt BT_CLR  &bt BT_NXT &kp A  &bt BT_PRV &none
-                                             &to DEF &trans   &trans &to DEF
+            &none &bt B3     &kp B4 &bt B5     &bt bootloader   &bt bootloader  &bt B5     &kp B4 &bt B3     &none
+            &none &bt B0     &bt B1 &bt B2     &none            &none           &bt B2     &bt B1 &bt B0     &none
+            &none &bt BT_PRV &kp A  &bt BT_NXT &bt BT_CLR       &bt BT_CLR      &bt BT_NXT &kp A  &bt BT_PRV &none
+                                           &to DEF &trans       &trans &to DEF
         >;
         };
 
@@ -148,7 +148,6 @@
                  &HT_CTRL_KP LALT 0 &kp SPACE   &trans &to DEF
         >;
         };
-
 
     };
 };
