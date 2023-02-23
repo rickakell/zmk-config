@@ -23,7 +23,7 @@
 #define B4 BT_SEL 4
 #define B5 BT_SEL 5
 
-#define BTLDR bootloader
+#define BTLDR &bootloader
 
 &sk {
     ignore-modifiers;
@@ -135,7 +135,7 @@
 
         keyboard_utility_layer {
         bindings = <
-            &none &bt B3     &kp B4 &bt B5     &BTLDR       &BTLDR     &bt B5     &kp B4 &bt B3     &none
+            &none &bt B3     &kp B4 &bt B5     BTLDR        BTLDR     &bt B5     &kp B4 &bt B3     &none
             &none &bt B0     &bt B1 &bt B2     &none        &none      &bt B2     &bt B1 &bt B0     &none
             &none &bt BT_PRV &kp A  &bt BT_NXT &bt BT_CLR   &bt BT_CLR &bt BT_NXT &kp A  &bt BT_PRV &none
                                            &to DEF &trans   &trans &to DEF
