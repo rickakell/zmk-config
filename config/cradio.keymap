@@ -52,8 +52,16 @@
             compatible = "zmk,behavior-tri-state";
             label = "SWAPPER";
             #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            bindings = <&kt LALT>, <&kp LSHFT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <3 13>;
+        };
+
+        TS_WN_BK: tri_state_swap_window_backward {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <2 13>;
         };
 
         HT_CTRL_KP: hold_tap_control_key_press {
@@ -106,7 +114,7 @@
 
         navigation_layer {
         bindings = <
-            &kp TAB_BK &kp TAB_FWD &TS_WN_FWD &kp WN_BK &kp VL_UP   &kp CAPS  &kp HOME  &kp UP    &kp END   &kp DEL
+            &kp TAB_BK &kp TAB_FWD &TS_WN_FWD &TS_WN_BK &kp VL_UP   &kp CAPS  &kp HOME  &kp UP    &kp END   &kp DEL
             &sk LGUI   &sk LALT    &sk LCTRL  &sk LSHFT &kp TAB     &kp ESC   &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC
             &kp LC(Z)  &kp LC(Y)   &TD_CPY_CT &kp LC(V) &kp VL_DN   &kp PG_UP &kp SL_UP &kp SL_DN &kp PG_DN &kp K_CANCEL
                                                &trans &kp WN_SNIP   &kp ENTER &trans
